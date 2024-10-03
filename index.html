@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div class="controls">
+        <div class="logo">TaskTracker</div>
+        <div class="search-container">
+          <form action="" class="search-form" id="searchForm">
+            <input
+              type="text"
+              placeholder="Find your task..."
+              class="user-input search-input"
+              id="searchInput"
+            />
+            <button type="submit" class="search-btn">
+              <i class="ri-search-2-line"></i>
+            </button>
+          </form>
+
+          <div class="filters-buttons" id="filtersButtons">
+            <button class="all-btn">All</button>
+            <button class="completed-btn">Completed</button>
+            <button class="pending-btn">Pending</button>
+            <button class="clearCompleted-btn">Clear Completed</button>
+          </div>
+
+          <form class="taskInput-form" action="" id="taskForm">
+            <input
+              type="text"
+              placeholder="Add new task..."
+              class="user-input task-input"
+              id="taskInput"
+            />
+            <button type="submit" class="add-btn">Add</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="tasks-list" id="taskList"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
